@@ -13,6 +13,29 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Certify Your Future</title>
     <link type="image/x-icon" href="./images/icon/favicon.ico" rel="shortcut icon" />
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyARZKxWD9UF9vrmLCi4uvbWfwSVAtsEf4M",
+        authDomain: "certy-bc908.firebaseapp.com",
+        projectId: "certy-bc908",
+        storageBucket: "certy-bc908.appspot.com",
+        messagingSenderId: "957071661367",
+        appId: "1:957071661367:web:f28d3a4e67afd8979862b2",
+        measurementId: "G-TP6HYS786E"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </head>
 
   <body>
