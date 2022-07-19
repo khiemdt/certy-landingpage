@@ -12,14 +12,18 @@
     ></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Certify Your Future</title>
-    <link type="image/x-icon" href="./images/icon/favicon.ico" rel="shortcut icon" />
+    <link
+      type="image/x-icon"
+      href="./images/icon/favicon.ico"
+      rel="shortcut icon"
+    />
     <script type="module">
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
       import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
-    
+
       // Your web app's Firebase configuration
       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
       const firebaseConfig = {
@@ -29,9 +33,9 @@
         storageBucket: "certy-bc908.appspot.com",
         messagingSenderId: "957071661367",
         appId: "1:957071661367:web:f28d3a4e67afd8979862b2",
-        measurementId: "G-TP6HYS786E"
+        measurementId: "G-TP6HYS786E",
       };
-    
+
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
@@ -223,7 +227,10 @@
           />
           <div class="wrapper-ceSocial">
             <div class="wrapper-ceSocial-left">
-              <div class="wrapper-ceSocial-image-content">
+              <div
+                class="wrapper-ceSocial-image-content"
+                style="padding-left: 70px"
+              >
                 <span
                   class="stick"
                   data-aos="fade-down"
@@ -266,7 +273,7 @@
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="600"
               >
-                <img src="./images/image-123.png" alt="images" />
+                <img src="./images/cesocial.png" alt="images" />
               </div>
             </div>
           </div>
@@ -411,10 +418,10 @@
                   CeLearning
                 </h2>
                 <p data-aos-duration="600">
-                  Using Artificial Intelligence, our tokenized <b>Learn-To-Earn
-                    model</b> will help personalize students' learning pathways
-                  suiting their career orientation while motivating them with
-                  incentive rewards.
+                  Using Artificial Intelligence, our tokenized
+                  <b>Learn-To-Earn model</b> will help personalize students'
+                  learning pathways suiting their career orientation while
+                  motivating them with incentive rewards.
                 </p>
                 <a href="#" class="button" style="visibility: hidden"
                   >discover</a
@@ -488,6 +495,9 @@
                 <div
                   class="wrapper-near-box-content-items"
                   data-aos-duration="600"
+                  data-aos="fade-down"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="400"
                 >
                   <img src="./images/f6d5g6d5g6s.svg" alt="near" />
                 </div>
@@ -524,11 +534,12 @@
           data-aos="fade-down"
           data-aos-easing="ease-in-sine"
           data-aos-duration="1000"
+          style="display: flex; gap: 25px;"
         >
-          <a href="#"
+          <a href="#" style="width: 168px"
             ><img src="./images/icon-new/bhujnkl.svg" alt="placeholder+image"
           /></a>
-          <a href="#"
+          <a href="#" style="width: 168px"
             ><img src="./images/logoNext.png" alt="placeholder+image"
           /></a>
         </div>
@@ -565,7 +576,7 @@
               <div class="Roadmap-wp-box-r-list">
                 <div class="line-g"></div>
                 <div
-                  class="Roadmap-wp-box-r-items avct"
+                  class="Roadmap-wp-box-r-items"
                   data-aos="fade-down"
                   data-aos-easing="ease-in-sine"
                   data-aos-duration="1000"
@@ -670,7 +681,10 @@
             <a href="#">
               <img src="./images/logo-footer.svg" alt="" />
             </a>
-            <p>Improve career development and pave the way to the future.</p>
+            <p>
+              Improve career development <br />
+              and pave the way to the future.
+            </p>
           </div>
           <div class="wrapper-footer-content">
             <div class="menu-footer">
@@ -726,7 +740,8 @@
                 </li>
 
                 <li>
-                  <a target="_blank"
+                  <a
+                    target="_blank"
                     href="https://www.youtube.com/channel/UC1IR8oKCHkpy4VEC0w9Ozgg"
                   >
                     <img src="./images/Youtube.svg" alt="" />
@@ -763,7 +778,8 @@
                   </a>
                 </li>
                 <li>
-                  <a target="_blank"
+                  <a
+                    target="_blank"
                     href="https://www.youtube.com/channel/UC1IR8oKCHkpy4VEC0w9Ozgg"
                   >
                     <img src="./images/mxh/icon-6.svg" alt="" />
@@ -843,7 +859,7 @@
     if (window.matchMedia("(max-width: 767px)").matches) {
       banner.attr("src", "./images/s545_BG.png");
     } else {
-      banner.attr("src", "./images/bg-banner.jpg");
+      banner.attr("src", "./images/banner15.png");
     }
   });
 </script>

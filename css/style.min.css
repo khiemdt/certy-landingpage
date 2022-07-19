@@ -47,9 +47,9 @@ a.button{background:#2c86ff;border-radius:12px;padding:14px 36px;color:#fff;lett
 section.ceSocial .wp-not-full{position:relative}
 img.bg-s23{position:absolute;top:20%;transform:translate(-100%,20%)}
 section.ceSocial{padding-top:120px;padding-bottom:120px}
-section.ceSocial .wrapper-ceSocial{display:flex;flex-wrap:wrap;align-items:center}
+section.ceSocial .wrapper-ceSocial{display:flex;flex-wrap:wrap;align-items:flex-start}
 section.ceSocial .wrapper-ceSocial .wrapper-ceSocial-left{width:40%}
-section.ceSocial .wrapper-ceSocial .wrapper-ceSocial-left .wrapper-ceSocial-image-content .stick{margin-bottom:122px}
+section.ceSocial .wrapper-ceSocial .wrapper-ceSocial-left .wrapper-ceSocial-image-content .stick{margin-bottom:70px}
 section.ceSocial .wrapper-ceSocial .wrapper-ceSocial-left .wrapper-ceSocial-image-content p{max-width:456px}
 section.ceSocial .wrapper-ceSocial .wrapper-ceSocial-right{width:60%}
 section.ceSocial .wrapper-ceSocial .wrapper-ceSocial-right .wrapper-ceSocial-images{display:flex;justify-content:right}
