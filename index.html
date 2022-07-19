@@ -635,7 +635,9 @@
             <button type="submit">
               <img src="./images/arrow-right-form.svg" />
             </button>
+            <p class="mess_form"></p>
           </form>
+
         </div>
       </div>
     </div>
@@ -839,16 +841,19 @@
   var form_id = "form_send";
 
     var data = {
-        "access_token": "x7irbtnzn2sswoln3ji5og6jqa"
+        "access_token": "x7irbtnzn2woln3ji5og6jqa"
     };
 
     function onSuccess() {
-      alert('Thanks Send Form.');
-      jQuery('#form_send input').val('')
+      jQuery('#form_send p').text('You have successfully subscribed to this newsletter.')
+      jQuery('#form_send input').val('');
     }
 
     function onError(error) {
-        alert('Errors Form !')
+      const el = jQuery('#form_send p');
+        el.text('Errors Form !');
+        el.addClass('mess_error');
+        jQuery('#form_send input').val('');
     }
 
 

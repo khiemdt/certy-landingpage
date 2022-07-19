@@ -32,6 +32,34 @@ $color_hover: #0383a3;
   padding: 0;
 }
 
+.mess_form {
+    position: absolute;
+    font-size: 15px;
+    bottom: -36px;
+    z-index: 9999;
+    color: #00ff1f;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.mess_error {
+    position: absolute;
+    font-size: 15px;
+    bottom: -36px;
+    z-index: 9999;
+    color: red;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+form#form_send {
+    position: relative;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 18px;
