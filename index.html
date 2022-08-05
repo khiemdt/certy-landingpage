@@ -501,6 +501,15 @@
                 >
                   <img src="./images/f6d5g6d5g6s.svg" alt="near" />
                 </div>
+                <div
+                  class="wrapper-near-box-content-items"
+                  data-aos-duration="600"
+                  data-aos="fade-down"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="400"
+                >
+                  <img src="./images/thegraphs.svg" alt="near" />
+                </div>
               </div>
             </div>
           </div>
@@ -534,13 +543,16 @@
           data-aos="fade-down"
           data-aos-easing="ease-in-sine"
           data-aos-duration="1000"
-          style="display: flex; gap: 25px;"
+          style="display: flex; gap: 25px"
         >
           <a href="#" style="width: 168px"
             ><img src="./images/icon-new/bhujnkl.svg" alt="placeholder+image"
           /></a>
           <a href="#" style="width: 168px"
             ><img src="./images/logoNext.png" alt="placeholder+image"
+          /></a>
+          <a href="#" style="width: 168px"
+            ><img src="./images/thegraphbacker.png" alt="placeholder+image"
           /></a>
         </div>
       </div>
@@ -658,7 +670,7 @@
           >
             Subscribe for early access
           </h3>
-          <form 
+          <form
             id="form_send"
             data-aos="fade-down"
             data-aos-easing="ease-in-sine"
@@ -671,7 +683,6 @@
             </button>
             <p class="mess_form"></p>
           </form>
-
         </div>
       </div>
     </div>
@@ -876,44 +887,41 @@
   });
 </script>
 <script type="text/javascript">
-
   var form_id = "form_send";
 
-    var data = {
-        "access_token": "x7irbtnzn2woln3ji5og6jqa"
-    };
+  var data = {
+    access_token: "x7irbtnzn2woln3ji5og6jqa",
+  };
 
-    function onSuccess() {
-      jQuery('#form_send p').text('You have successfully subscribed to this newsletter.')
-      jQuery('#form_send input').val('');
-    }
+  function onSuccess() {
+    jQuery("#form_send p").text(
+      "You have successfully subscribed to this newsletter."
+    );
+    jQuery("#form_send input").val("");
+  }
 
-    function onError(error) {
-      const el = jQuery('#form_send p');
-        el.text('Errors Form !');
-        el.addClass('mess_error');
-        jQuery('#form_send input').val('');
-    }
+  function onError(error) {
+    const el = jQuery("#form_send p");
+    el.text("Errors Form !");
+    el.addClass("mess_error");
+    jQuery("#form_send input").val("");
+  }
 
+  function send() {
+    var subject = "WEB SIZE";
+    var message = `Email: ${jQuery("#form_send input").val()}`;
+    data["subject"] = subject;
+    data["text"] = message;
 
-    function send() {
-        var subject = "WEB SIZE";
-        var message = `Email: ${jQuery('#form_send input').val()}`;
-        data['subject'] = subject;
-        data['text'] = message;
+    $.post("https://postmail.invotes.com/send", data, onSuccess).fail(onError);
 
-        $.post('https://postmail.invotes.com/send',
-            data,
-            onSuccess
-        ).fail(onError);
+    return false;
+  }
 
-        return false;
-    }
-
-  $( "#form_send" ).submit(function( event ) {
+  $("#form_send").submit(function (event) {
     event.preventDefault();
-    var email = jQuery('#form_send input').val();
-    if(email){
+    var email = jQuery("#form_send input").val();
+    if (email) {
       send();
     }
   });
