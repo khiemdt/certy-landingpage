@@ -168,6 +168,17 @@ img.bg-noe { position: absolute; top: 0; right: 0; }
 img.wrapper-ceStorage-icon-robot { position: absolute; right: 34px; top: 60%; transform: translateY(-50%); }
 
 .wp_bg_blud-rows { position: relative; }
+.mess_form {
+  position: absolute;
+  font-size: 15px;
+  bottom: -36px;
+  z-index: 9999;
+  color: #00ff1f;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
 
 img.bg-noe-rows { position: absolute; top: 0px; }
 
